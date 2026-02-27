@@ -248,7 +248,7 @@ Through this project, I gained hands-on understanding of several important conce
 | Item | Link |
 |---|---|
 | **GitHub Repository** | https://github.com/ceciansh/bootsrap-project |
-| **Live Deployed Site** | file://C:/Users/crrenggcselab3/Desktop/bootstrap-project/index.html |
+| **Live Deployed Site** | file:///C:/Users/crrenggcselab3/Desktop/my_website/about.html |
 
 ---
 
