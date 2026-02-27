@@ -18,8 +18,8 @@ The final deliverable is a **3-page static website** consisting of:
 - `contact.html` — Contact Page with a working form
 - `style.css` — Custom stylesheet
 
-> **Live Preview:** [https://ceciansh.github.io/bootstrap-project](https://YOUR_USERNAME.github.io/bootstrap-project)  
-> **GitHub Repository:** [https://github.com/ceciansh/bootstrap-project](https://github.com/YOUR_USERNAME/bootstrap-project)
+> **Live Preview:** [file:///C:/Users/crrenggcselab3/Desktop/bootstrap-project/index.html](https://YOUR_USERNAME.github.io/bootstrap-project)  
+> **GitHub Repository:** [https://github.com/ceciansh/bootsrap-project](https://github.com/YOUR_USERNAME/bootstrap-project)
 
 ---
 
@@ -248,8 +248,8 @@ Through this project, I gained hands-on understanding of several important conce
 
 | Item | Link |
 |---|---|
-| **GitHub Repository** | https://github.com/ceciansh/bootstrap-project |
-| **Live Deployed Site** | https://ceciansh.github.io/bootstrap-project |
+| **GitHub Repository** | https://github.com/ceciansh/bootsrap-project |
+| **Live Deployed Site** | file:///C:/Users/crrenggcselab3/Desktop/bootstrap-project/index.html |
 
 ---
 
