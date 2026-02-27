@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyBrand — Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My<span>Brand</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+        <i class="bi bi-list text-white fs-4"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn nav-cta ms-2">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-tag" style="background:rgba(44,116,179,0.25); color:#60aaeb; border-color:rgba(44,116,179,0.4);">Get in Touch</div>
+          <h1 class="mt-3 mb-4">Let's Start a Conversation</h1>
+          <p>Have a project in mind or just want to say hello? We'd love to hear from you. Fill out the form and we'll get back to you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT MAIN ==================== -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Contact Info Box -->
+        <div class="col-lg-4">
+          <div class="contact-info-box">
+            <h3>Contact Information</h3>
+            <p>Reach out through any of these channels — we're always here for you.</p>
+
+            <div class="mt-4">
+              <div class="contact-detail">
+                <div class="contact-detail-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <h6>Our Address</h6>
+                  <p>123 Innovation Drive,<br/>New York, NY 10001, USA</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <h6>Phone Number</h6>
+                  <p>+1 (800) 123-4567</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <h6>Email Address</h6>
+                  <p>hello@mybrand.com</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail-icon"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <h6>Working Hours</h6>
+                  <p>Mon – Fri: 9AM – 6PM EST</p>
+                </div>
+              </div>
+            </div>
+
+            <hr style="border-color:rgba(255,255,255,0.15); margin: 28px 0;"/>
+            <div class="footer-heading" style="color:rgba(255,255,255,0.45); font-size:0.78rem;">Follow Us</div>
+            <div class="mt-3">
+              <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+          <div class="contact-form-wrapper">
+            <h4 class="fw-bold mb-1">Send Us a Message</h4>
+            <p class="text-muted mb-4" style="font-size:0.93rem;">Fill in the details below and we'll respond as soon as possible.</p>
+
+            <!-- Success Alert (hidden by default) -->
+            <div id="successAlert" class="alert alert-success d-none align-items-center gap-2 mb-4" role="alert">
+              <i class="bi bi-check-circle-fill fs-5"></i>
+              <span>Your message has been sent! We'll get back to you within 24 hours.</span>
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label class="form-label" for="firstName">First Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="firstName" placeholder="John" required/>
+                  <div class="invalid-feedback">Please enter your first name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="lastName">Last Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Doe" required/>
+                  <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="email">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="john@example.com" required/>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="phone">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="+1 (000) 000-0000"/>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="service">Service You're Interested In</label>
+                  <select class="form-select" id="service">
+                    <option value="" selected disabled>Select a service...</option>
+                    <option>Web Development</option>
+                    <option>UI/UX Design</option>
+                    <option>Digital Marketing</option>
+                    <option>Mobile App Development</option>
+                    <option>Cloud Solutions</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="subject">Subject <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="subject" placeholder="How can we help you?" required/>
+                  <div class="invalid-feedback">Please enter a subject.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="message">Your Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Tell us more about your project or question..." required></textarea>
+                  <div class="invalid-feedback">Please enter your message.</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agreeCheck" required/>
+                    <label class="form-check-label text-muted" for="agreeCheck" style="font-size:0.88rem;">
+                      I agree to the <a href="#" class="text-accent">Privacy Policy</a> and consent to being contacted by MyBrand.
+                    </label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-primary-custom">
+                    <i class="bi bi-send-fill"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ SECTION ==================== -->
+  <section class="py-5" style="background: var(--light-bg); padding: 90px 0 !important;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center mb-5">
+            <div class="section-tag">FAQ</div>
+            <h2 class="fw-bold mb-3">Frequently Asked Questions</h2>
+            <p class="text-muted">Quick answers to the questions we hear most often.</p>
+          </div>
+          <div class="accordion accordion-flush" id="faqAccordion">
+            <div class="accordion-item border rounded-3 mb-3" style="overflow:hidden;">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  How quickly do you respond to inquiries?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">We respond to all inquiries within 24 hours on business days. For urgent matters, you can call us directly at +1 (800) 123-4567.</div>
+              </div>
+            </div>
+            <div class="accordion-item border rounded-3 mb-3" style="overflow:hidden;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  What is your typical project timeline?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">Project timelines vary based on scope and complexity. A simple website typically takes 2–4 weeks, while complex web applications can take 2–6 months. We'll provide a detailed timeline during your initial consultation.</div>
+              </div>
+            </div>
+            <div class="accordion-item border rounded-3 mb-3" style="overflow:hidden;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Do you offer ongoing maintenance and support?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">Yes! We offer flexible maintenance plans to keep your website secure, up-to-date, and performing at its best after launch. Ask about our retainer packages during your consultation.</div>
+              </div>
+            </div>
+            <div class="accordion-item border rounded-3 mb-3" style="overflow:hidden;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Can you work with clients outside the USA?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">Absolutely! We have clients across 20+ countries and are fully equipped to work remotely with international teams across all time zones.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MAP PLACEHOLDER ==================== -->
+  <div style="background:#e9ecef; height:320px; display:flex; align-items:center; justify-content:center;">
+    <div class="text-center text-muted">
+      <i class="bi bi-geo-alt-fill fs-1 text-accent d-block mb-2"></i>
+      <p class="mb-0 fw-500">123 Innovation Drive, New York, NY 10001</p>
+      <small>Interactive map would be embedded here via Google Maps API</small>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">My<span>Brand</span></div>
+          <p class="footer-desc">Crafting digital experiences that inspire, engage, and drive results for businesses around the world.</p>
+          <div class="mt-4">
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Services</div>
+          <ul class="footer-links">
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Cloud Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-heading">Stay Updated</div>
+          <p style="color:rgba(255,255,255,0.5); font-size:0.88rem; line-height:1.7; margin-bottom:16px;">Subscribe to our newsletter for tips, news, and updates.</p>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="your@email.com" style="border-radius:10px 0 0 10px; background:rgba(255,255,255,0.07); border-color:rgba(255,255,255,0.1); color:white;"/>
+            <button class="btn" style="background:var(--accent); color:white; border-radius:0 10px 10px 0; padding:0 20px;">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <span>&copy; 2025 MyBrand. All rights reserved.</span>
+        <span>Made with <i class="bi bi-heart-fill text-danger"></i> using Bootstrap 5</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Form Validation & Submission
+    const form = document.getElementById('contactForm');
+    const successAlert = document.getElementById('successAlert');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+      }
+      // Simulate submission
+      successAlert.classList.remove('d-none');
+      successAlert.classList.add('d-flex');
+      form.reset();
+      form.classList.remove('was-validated');
+      window.scrollTo({ top: successAlert.offsetTop - 100, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
